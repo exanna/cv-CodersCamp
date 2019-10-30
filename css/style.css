@@ -324,41 +324,21 @@ textarea {
 /* animations */
 @keyframes showHi {
     0% {
-        transform: translateX(-500px);
+        transform: translateX(-800px);
     }
 
     100% {
         transform: translateX(0);
-    }
-}
-
-@keyframes showHiLandscape {
-    0% {
-        left: -500px;
-    }
-
-    100% {
-        left: 130px;
     }
 }
 
 @keyframes showName {
     0% {
-        transform: translateX(-400px);
+        transform: translateX(-800px);
     }
 
     100% {
         transform: translateX(0);
-    }
-}
-
-@keyframes showNameLandscape {
-    0% {
-        left: -300px;
-    }
-
-    100% {
-        left: 230px;
     }
 }
 
@@ -372,31 +352,22 @@ textarea {
     }
 }
 
-@keyframes showProfLandscape {
-    0% {
-        bottom: -500px;
-    }
-
-    100% {
-        bottom: 20px;
-    }
-}
-
 @media only screen and (orientation: landscape) {
 
     /* header */
     .hi {
-        animation: showHiLandscape 2s 1 both;
-        top: 0;
+        top: 20px;
+        right: 100px;
     }
 
     .name {
-        top: 80px;
-        animation: showNameLandscape 2s 2s 1 both;
+        left: 150px;
+        top: 100px;
     }
 
     .prof {
-        animation: showProfLandscape 2s 4s 1 both;
+        bottom: 20px;
+        left: 25%;
     }
 
     /* skills */
@@ -407,25 +378,21 @@ textarea {
 }
 
 @media only screen and (min-width: 360px) and (orientation: portrait) {
-    .about_me .descriptiom {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (min-width: 360px) and (orientation: portrait) {
 
     /* header */
     .name {
-        font-size: 4rem;
+        font-size: 5rem;
         top: 40%;
     }
 
+    .prof {
+        left: 18%;
+    }
+
     /* about */
+
     .about_me .description {
         font-size: 2rem;
-        margin-top: 30px;
-        text-align: justify;
-        line-height: 1.6;
     }
 
     /* skills */
@@ -448,5 +415,53 @@ textarea {
 
     .project p {
         font-size: 1.8rem;
+    }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 640px) {
+
+    /* header */
+    .hi {
+        top: 30px;
+        right: 150px;
+    }
+
+    .name {
+        left: 150px;
+        top: 130px;
+        font-size: 4rem;
+    }
+
+    .prof {
+        left: 12%;
+    }
+
+    /* about */
+    .about_me .description {
+        font-size: 2rem;
+    }
+
+    /* projects */
+    .project h1 {
+        font-size: 2.5rem;
+    }
+
+    .project p {
+        font-size: 1.8rem;
+    }
+
+    /* contact */
+    .contact {
+        background-color: var(--main-color2);
+        padding: 20px 40px;
+    }
+
+    /* footer */
+    .footer p {
+        font-size: 1.5rem;
+    }
+
+    .social i {
+        font-size: 4rem;
     }
 }

@@ -46,14 +46,14 @@ html {
 .hi {
     position: absolute;
     top: 80px;
-    right: -500px;
+    right: 50px;
     animation: showHi 2s 1 both;
     font-size: 5rem;
 }
 
 .name {
     position: absolute;
-    left: -300px;
+    left: 50px;
     top: 180px;
     animation: showName 2s 2s 1 both;
     font-size: 3.5rem;
@@ -62,8 +62,7 @@ html {
 .prof {
     position: absolute;
     bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 12%;
     font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -325,11 +324,11 @@ textarea {
 /* animations */
 @keyframes showHi {
     0% {
-        right: -500px;
+        transform: translateX(-500px);
     }
 
     100% {
-        right: 30px;
+        transform: translateX(0);
     }
 }
 
@@ -345,11 +344,11 @@ textarea {
 
 @keyframes showName {
     0% {
-        left: -300px;
+        transform: translateX(-400px);
     }
 
     100% {
-        left: 30px;
+        transform: translateX(0);
     }
 }
 
@@ -365,11 +364,11 @@ textarea {
 
 @keyframes showProf {
     0% {
-        bottom: -500px;
+        transform: translateY(1500px);
     }
 
     100% {
-        bottom: 65px
+        transform: translateY(0);
     }
 }
 

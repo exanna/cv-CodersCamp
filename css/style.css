@@ -659,9 +659,6 @@ textarea {
 
     .about_me .description {
         font-size: 3rem;
-        margin-top: 30px;
-        text-align: justify;
-        line-height: 1.6;
         padding: 100px;
     }
 
@@ -693,13 +690,8 @@ textarea {
 
     .project {
         border-bottom: none;
-    }
+        padding: 50px;
 
-    .project h1 {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 3.5rem;
-        letter-spacing: 1px;
     }
 
     .project p {

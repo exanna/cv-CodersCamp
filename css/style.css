@@ -566,6 +566,7 @@ textarea {
     }
 }
 
+/* PC */
 @media only screen and (min-width: 768px) {
     .header {
         background-image: url('../img/header.jpg');
@@ -609,6 +610,7 @@ textarea {
     }
 }
 
+/* show navigation */
 @media only screen and (min-width: 1024px) {
 
     .section {
@@ -655,7 +657,6 @@ textarea {
 
     .nav a:hover {
         transform: scale(1.8);
-
     }
 
     /* about */
@@ -670,8 +671,9 @@ textarea {
     .wrapper {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
+        grid-column-gap: 80px;
+        grid-row-gap: 80px;
+        margin-top: 50px;
     }
 
     .skill {

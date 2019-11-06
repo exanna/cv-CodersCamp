@@ -254,8 +254,12 @@ li {
     width: 100%;
     transition: 0.3s;
     filter: brightness(50%);
+    position: relative;
 }
 
+.live {
+    display: none;
+}
 
 .project_img:hover {
     transform: scale(1.12);

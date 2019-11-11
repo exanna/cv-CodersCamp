@@ -74,12 +74,12 @@ html {
 /* navigation */
 
 .bars i {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     font-size: 3.5rem;
     display: none;
-    color: var(--main-color2);
+    color: var(--black);
 }
 
 .bars i.active {

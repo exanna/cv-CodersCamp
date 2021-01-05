@@ -1,1 +1,1 @@
-live: https://exanna.github.io/cv/
+live: https://exanna.github.io/cv-CodersCamp/
